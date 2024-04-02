@@ -19,9 +19,7 @@ if ($data && !empty($data['image'])) {
     top: 9.9rem;'> ";
 } else {
     echo " <img src='./assets/user.png' style='width: 50px;
-    position: absolute;
-    left: 44rem;
-    top: 3rem;' >";
+    ";
 }
 
 $fetch = "SELECT * FROM COOKIE_TASK WHERE id ='$id'";
