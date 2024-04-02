@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 900;
+    overflow: hidden;
+}
+
+.discovery-gift img {
+  width: 60px;
+}
+.discovery-gift {
+  gap: 20px;
+}
+
+.left-side{
+ 
+    margin: -40px 4px 5px 5px;
+    padding: 0px 13px 35px 19px;
+    max-width: 41vw;
+}
+
+.top-left{
+    width: 37vw;
+  
+}
+.login-para{
+    margin-top: 20px;
+    padding: 5px 4rem 9px 16px;
+    width: 36vw;
+ 
+}
+.login-para p{
+color: gray;
+font-size: 22px;
+
+}
+.login-area{
+    max-width: 24vw;
+    padding-left: inherit;
+}
+.form-area{
+    gap: 10px;
+
+}
+label{
+    font-size: 14px;
+}
+
+ p{
+color: #5b13d8;
+}
+
+.login-btn button img {
+    width: 30px;
+    margin-right: 10px;
+}
+.login {
+    background-color: #5b13d8;
+    color: white;
+}
+.login-google{
+    border: 1px solid black;
+    gap: 20px;
+}
+.bottom{
+    font-size: 13px;
+    position: relative;
+    left: 36%;
+    top: 0%;
+    flex-direction: row;
+    gap: inherit;
+}
+.bottom p{
+    color: gray;
+}
+.bottom a{
+    text-decoration: none;
+    color: #5b13d8;
+    font-weight: 700;
+}
+.double{
+    width: 80vw;
+}
+.right{
+  
+     
+        width: 100%;
+        height: 100vh;
+}
+.right-side{
+    background-image: url("./assets/1358.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right-top-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    top: 12%;
+    right: 0;
+}
+.right-top-text p{
+    color: black;
+    font-size: medium;
+    line-height: 1.6rem;
+    padding: 13px 7px;
+}
+.right-top-text h2{
+    color: #5b13d8;
+    font-size: 29px;
+    font-weight: 700;
+    padding: 1px 4px;
+}
