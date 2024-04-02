@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../displayPassword.php';
+// include '../changeMode.php';
 if (isset($_SESSION['error'])) {
   echo '<div  style="
   color: red;
@@ -43,10 +44,14 @@ if (isset($_SESSION['error'])) {
 </head>
 
 <body>
+  <div class="header" >
+    <?php include '../changeMode.php';
+    ?>
+  </div>
   <div class="container m-4 p-5">
     <div class="row">
       <div class="col">
-        <div class="double d-flex justify-content-center align-items-center">
+        <div class="double d-flex justify-content-center align-items-center" style="position: relative;right: 48rem;">
           <div class="left-side">
             <div class="top-left">
               <div class="discovery-gift d-flex flex-row align-items-center justify-content-start px-3">
