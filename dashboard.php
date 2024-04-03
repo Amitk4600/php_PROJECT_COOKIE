@@ -65,6 +65,7 @@ if ($nums > 0) {
 </head>
 
 <body>
+    
     <div class="display-img">
         <?php
 
