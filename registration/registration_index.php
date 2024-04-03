@@ -147,6 +147,7 @@ if (isset($_SESSION['registration_alert'])) {
                 </p>
               </div>
             </div>
+            
             <div class="login-area">
               <div class="form-group d-flex flex-column form-area py-3">
                 <form action="registration.php" method="post">
