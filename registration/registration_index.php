@@ -11,7 +11,7 @@ if (isset($_SESSION['registration_alert'])) {
   left: 17rem;
   padding: 5px;
   border-radius: 5px;
-   ">' .$_SESSION['registration_alert'] . '</div>';
+   ">' . $_SESSION['registration_alert'] . '</div>';
 
   unset($_SESSION['registration_alert']);
 } elseif (isset($_SESSION['error'])) {
@@ -23,7 +23,7 @@ if (isset($_SESSION['registration_alert'])) {
     
       padding: 5px;
       border-radius: 5px;
-       ">' .$_SESSION['error'] . '</div>';
+       ">' . $_SESSION['error'] . '</div>';
 
   unset($_SESSION['error']);
 }
@@ -158,15 +158,15 @@ if (isset($_SESSION['registration_alert'])) {
 
                   <label class="mt-4" for="name">Enter your Mobile</label>
                   <input class="form-control" type="tel" name="mobile" id="" placeholder="Mobile" required maxlength="10" />
-                  
+
                   <label class="mt-4" for="name">Enter your password</label>
                   <input class="form-control" type="password" name="password" id="password" placeholder="atleast 8 characters" required />
-                  <span><img src="./assets/eye.svg" id="eye" onclick="display('password')"/></span>
+                  <span><img src="./assets/eye.svg" id="eye" onclick="display('password')" /></span>
 
                   <label class="mt-4" for="name">Confirm password</label>
                   <input class="form-control" type="password" name="Confirm_password" id="Confirm_password" placeholder="atleast 8 characters" required />
-                  <span><img src="./assets/eye.svg" id="eye" onclick="display('Confirm_password')"/></span>
-                  
+                  <span><img src="./assets/eye.svg" id="eye" onclick="display('Confirm_password')" /></span>
+
                   <label class="mt-4" for="name">Date of Birth</label>
                   <input class="form-control" type="date" name="date" id="" placeholder="date" required />
 
@@ -176,25 +176,24 @@ if (isset($_SESSION['registration_alert'])) {
                   <div class="bottom d-flex fw-light justify-content-end align-items-center">
                     <p class="mt-3 "> Already have an account?</p>
                     <a class="mx-4" href="../login/login_index.php" name="login">Login</a>
-                  </form>
-                </div>
+                </form>
               </div>
             </div>
           </div>
+        </div>
+        <div class="right">
+          <div class="right-side">
+            <div class="right-top-text">
 
-          <div class="right">
-            <div class="right-side">
-              <div class="right-top-text">
-
-                <p class="fw-bold">Welcome! It's great to have you here.</p>
-                <h2>WELCOME </h2>
-              </div>
+              <p class="fw-bold">Welcome! It's great to have you here.</p>
+              <h2>WELCOME </h2>
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

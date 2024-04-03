@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../connection.php';
+include '../email.php';
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -61,9 +62,24 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($conn, $insert);
 
         if ($result) {
-     
-
             $_SESSION['registration_alert'] = "Registration successful. Please login.";
+            
+            // send email
+            $to = $_POST['email'];
+            $subject = "Welcome to xyzTech.com!";
+            $msg  = "Dear $name,
+            Welcome aboard! 🎉 Thank you for registering with us. 
+            Your journey with xyzTech.com starts now!
+            Explore our offerings and feel free to reach out if you need any assistance.
+            
+            Best regards,";
+            $from  = "amitk4600@gmail.com";
+            $header  = "From:$from";
+            if (mail($to, $subject, $msg, $header)) {
+                $_SESSION['mail_success'] = true; 
+            } else {
+                $_SESSION['mail_error'] = true; 
+            }
             header("location: http://localhost/project/registration/registration_index.php");
             exit();
         } else {
